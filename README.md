@@ -19,18 +19,70 @@
 **Client:** Python, Colab (for testing and data preprocessing)  
 **Frontend:** HTML, CSS, JavaScript & Streamlit
 
-## 🔗 Links
 
-Technical Poster [Link](https://github.com/its-akshay/MajorProject/files/13718240/PosterPresentations.com-Virtual.16.9-Ratio.-Template-Aragon.1.pdf)  
-Synopsis: [Link](https://docs.google.com/document/d/17g8hYTehLC2yCQF0jGgs8T8eBAlk48dCYvA9PZKhjfo/edit?usp=sharing)  
-PPT: [Link](https://docs.google.com/presentation/d/1pU7r7vuunXBUWNMaTY9FL8qNqhVPC1KO/edit#slide=id.p1)  
-Report: [Link](https://drive.google.com/file/d/19d7xwPH6pAgxbXhOEcz59R6lvBxUuTkz/view?usp=sharing)  
-Published Paper: [Link](https://ijsrem.com/download/crop-recommendation-system-2/)  
-DOI: 10.55041/IJSREM26385  
-Video Link: [YouTube](https://youtu.be/L-HTa6lLKrE)  
 
 ## Images
 
 ![2](https://github.com/its-akshay/MajorProject2/assets/71098450/81c8deb7-64c9-4fc0-90ad-0507da8fe5cb)  
 ![1](https://github.com/its-akshay/MajorProject2/assets/71098450/699660b7-de9b-4b8f-a0aa-ab728417010d)  
 ![3](https://github.com/its-akshay/MajorProject2/assets/71098450/444b136b-304e-4852-a53a-4740118fea20)
+
+
+
+# Project: Book Recommender System Using Machine Learning! | Collaborative Filtering Based
+
+In today’s fast-paced world, recommendation systems play a crucial role in helping individuals make informed choices amidst their busy schedules. These systems leverage artificial intelligence algorithms to curate personalized lists of relevant content tailored to each user's preferences, based on factors like their profile, browsing history, and similarities with other users.
+
+## Types of Recommendation Systems:
+
+### 1) Content Based:
+
+Content-based systems consider item attributes and characteristic information to make recommendations. Examples include Twitter and YouTube, where recommendations are made based on what users are currently engaging with, such as music or videos. These systems create vectors for item features and recommend similar items or user-specific actions.
+
+One challenge with content-based systems is their tendency to make obvious recommendations due to excessive specialization, limiting recommendations to specific categories even when broader options may be of interest.
+
+### 2) Collaborative Filtering:
+
+Collaborative filtering systems rely on user-item interactions to make recommendations. By identifying clusters of users with similar preferences or behaviors, these systems can recommend items based on the preferences of similar users. However, they face challenges such as computational complexity, bias towards famous items, and difficulty recommending new items.
+
+## About this Project:
+
+This project is a Streamlit web application that recommends various books based on user interests.
+
+## Dataset Used:
+
+* [Dataset link](https://www.kaggle.com/ra4u12/bookrecommendation)
+
+## Concept Used to Build the Model (model.pkl):
+
+1. Load the dataset.
+2. Initialize the value of k.
+3. Iterate through the training data points to predict the class.
+4. Calculate the Euclidean distance between the test data and each training data point.
+5. Sort the distances in ascending order.
+6. Retrieve the top k rows from the sorted array.
+
+## How to Run?
+
+### Steps:
+
+1. Clone the repository.
+
+2. Create a conda environment after opening the repository:
+conda create -n books python=3.7.10 -y
+
+3. activate the environment
+conda activate books
+
+4. Installing the requirements
+pip install -r requirements.txt
+
+5. Run the following file to generate the models:
+Books Recommender.ipynb
+
+6. Finally, run the Streamlit app:
+streamlit run app.py
+
+
+
+
